@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PizzaTableViewCell" customModule="NennosPizza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_wood" translatesAutoresizingMaskIntoConstraints="NO" id="J4q-5d-QTD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-WK-qLY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIU-ol-hoo">
+                        <rect key="frame" x="0.0" y="107.5" width="320" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZK-fW-fBU">
+                                <rect key="frame" x="12" y="12" width="227" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbR-Nd-blc">
+                                <rect key="frame" x="12" y="41" width="227" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlk-WL-Okd">
+                                <rect key="frame" x="247" y="30" width="61" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="wYm-ud-DfC"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="$10" image="ic_cart"/>
+                                <connections>
+                                    <action selector="actionAddToCart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0My-bI-NtV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mlk-WL-Okd" firstAttribute="leading" secondItem="rbR-Nd-blc" secondAttribute="trailing" constant="8" id="LWp-rq-EEt"/>
+                            <constraint firstAttribute="bottom" secondItem="Mlk-WL-Okd" secondAttribute="bottom" constant="12" id="SjU-RJ-3vQ"/>
+                            <constraint firstItem="rbR-Nd-blc" firstAttribute="top" secondItem="OZK-fW-fBU" secondAttribute="bottom" id="Tfk-8h-ykA"/>
+                            <constraint firstItem="rbR-Nd-blc" firstAttribute="leading" secondItem="OZK-fW-fBU" secondAttribute="leading" id="act-N8-u31"/>
+                            <constraint firstAttribute="trailing" secondItem="Mlk-WL-Okd" secondAttribute="trailing" constant="12" id="bDm-NT-xwb"/>
+                            <constraint firstItem="OZK-fW-fBU" firstAttribute="leading" secondItem="KIU-ol-hoo" secondAttribute="leading" constant="12" id="c0T-cp-MMw"/>
+                            <constraint firstItem="OZK-fW-fBU" firstAttribute="top" secondItem="KIU-ol-hoo" secondAttribute="top" constant="12" id="t1V-tn-Bk6"/>
+                            <constraint firstItem="OZK-fW-fBU" firstAttribute="trailing" secondItem="rbR-Nd-blc" secondAttribute="trailing" id="tPn-6M-MXL"/>
+                            <constraint firstAttribute="bottom" secondItem="rbR-Nd-blc" secondAttribute="bottom" constant="12" id="tgw-2H-aqP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KIU-ol-hoo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" id="IXa-md-Xwe"/>
+                    <constraint firstItem="KIU-ol-hoo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NBh-SP-og2"/>
+                    <constraint firstAttribute="trailing" secondItem="J4q-5d-QTD" secondAttribute="trailing" id="Sbp-1w-ChO"/>
+                    <constraint firstAttribute="bottom" secondItem="jlg-WK-qLY" secondAttribute="bottom" id="SyB-Za-Tmf"/>
+                    <constraint firstItem="jlg-WK-qLY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VLd-bM-lbQ"/>
+                    <constraint firstAttribute="trailing" secondItem="jlg-WK-qLY" secondAttribute="trailing" id="Xpy-OR-HXk"/>
+                    <constraint firstAttribute="bottom" secondItem="KIU-ol-hoo" secondAttribute="bottom" id="ZE2-bF-6S7"/>
+                    <constraint firstItem="J4q-5d-QTD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eVL-E0-M9K"/>
+                    <constraint firstItem="jlg-WK-qLY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hS5-Dp-G5C"/>
+                    <constraint firstItem="J4q-5d-QTD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nER-hH-QGe"/>
+                    <constraint firstAttribute="bottom" secondItem="J4q-5d-QTD" secondAttribute="bottom" id="vdi-bf-8dP"/>
+                    <constraint firstAttribute="trailing" secondItem="KIU-ol-hoo" secondAttribute="trailing" id="ySF-Yh-6xc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAddToCart" destination="Mlk-WL-Okd" id="aio-Ae-lpq"/>
+                <outlet property="imgPizzaImageView" destination="jlg-WK-qLY" id="NN1-FG-rsD"/>
+                <outlet property="lblPizzaIngredientsName" destination="rbR-Nd-blc" id="UE3-ka-K6F"/>
+                <outlet property="lblPizzaName" destination="OZK-fW-fBU" id="BaH-wa-MW4"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="149.32533733133434"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_wood" width="1440" height="1216"/>
+        <image name="ic_cart" width="14" height="14"/>
+    </resources>
+</document>

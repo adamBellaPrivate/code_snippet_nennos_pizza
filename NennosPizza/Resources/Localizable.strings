@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  NennosPizza
+
+  Created by Adam Bella on 1/11/19.
+  Copyright © 2019 Bella Ádám. All rights reserved.
+*/
+
+// MARK: - Navigation Bar titles
+screen.home.title = "NENNO'S PIZZA";
+screen.create_pizza.title = "CREATE A PIZZA";
+screen.cart.title = "CART";
+screen.drinks.title = "DRINKS";
+
+// MARK: - Manage Pizza
+screen.manage_pizza.custom_pizza.name = "Custom Pizza";
+screen.manage_pizza.header.ingredients.desc = "Ingredients";
+
+// MARK: - CART
+screen.cart.btn_checkout.title = "checkout";
+screen.cart.custom_pizza.prefix = "Custom";
+screen.cart.total_amount_desc = "total";
+screen.cart.empty_list_message = "Your cart is empty!\nPlease add your first product to the cart.";
+
+// MARK: - Finish
+screen.finish.message = "Thank you\nfor your order!";
+
+// MARK: - Notification
+notification.message = "added to cart";
+
+// MARK: - Error handling
+general_error = "General error";
+business_error = "Business error: %d";
